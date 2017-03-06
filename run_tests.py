@@ -11,6 +11,8 @@ for module in config['enabled_modules']:
     i = importlib.import_module(module)
     return_string = i.test()
     if return_string != "":
-        print('%s: %s' % (module,return_string))
-        exit(1)
-print('pass')
+        output.append('%s: %s' % (module,return_string))
+if len(output) ==0:
+    print('pass')
+else:
+    print(', '.join(output)
