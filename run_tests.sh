@@ -1,3 +1,3 @@
 #!/bin/bash
 source $(dirname $0)/.venv/bin/activate
-python run_tests.py
+python $(dirname $0)/run_tests.py
