@@ -1,4 +1,4 @@
-import json, yaml, sys, os, importlib
+import yaml, sys, os, importlib
 
 script_path =os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0,script_path+'/tests')
