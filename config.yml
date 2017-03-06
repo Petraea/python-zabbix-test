@@ -1,0 +1,3 @@
+enabled_modules:
+ - python_test1
+ - python_test2
