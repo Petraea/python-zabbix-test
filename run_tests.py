@@ -9,6 +9,8 @@ with open('config.yml') as f:
 output = {}
 for module in config['enabled_modules']:
     i = importlib.import_module(module)
-    output[module] = i.test()
-
-print(json.dumps(output))
+    return_string = i.test()
+    if return_string != "":
+        print('%s: %s' % (module,return_string))
+        exit(1)
+print('pass')

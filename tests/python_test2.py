@@ -1,4 +1,6 @@
 import time
 
 def test():
-    return (time.time()%30) >= 15
+    x = time.time()%30
+    if x < 15: return ""
+    else: return "Time is %s" % x

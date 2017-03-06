@@ -1,5 +1,5 @@
 def test():
     if True:
-        return True
+        return ""
     else:
-        return False
+        return "Logical Error"
